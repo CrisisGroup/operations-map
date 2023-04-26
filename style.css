@@ -94,7 +94,7 @@ button#reset {
 
 @media (max-width: 768px) {
     #mobilemenubtn {
-        background-color: #ff6a69;
+        background-color: #e87722;
         z-index: 99999999;
         position: absolute;
         text-align: center;
@@ -180,7 +180,7 @@ p.infobox-dateline {
 
 #tagline {
     vertical-align: middle;
-    color: #bed2ff;
+    color: #FFF;
     font-family: "franklin-gothic-urw", sans-serif;
     width: 270px;
     margin-top: 36px;
@@ -194,7 +194,7 @@ p.infobox-dateline {
     border-radius: 4px;
     padding: 16px;
     font-family: "franklin-gothic-urw", sans-serif;
-    color: #000;
+    color: #FFF;
     font-weight: 500;
 }
 
@@ -217,7 +217,14 @@ ul {
     display: inline-block;
     height: 10px;
     width: 30px;
-    margin-right: 5px;
+    margin-right: 15px;
+}
+
+.legend-labels {
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 3px;
 }
 
 .mapboxgl-popup-content {

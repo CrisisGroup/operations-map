@@ -37,11 +37,11 @@ $(document).ready(function(){
 <div class="box">
 
 <h1>Crisis Group’s Global Operations</h1>
-<p id="tagline"><strong style="color: #000;">LEGEND</strong></p>
+<p id="tagline"><strong style="color: #FFF;">LEGEND</strong></p>
 <ul id="legend">
-  <li><div><span style='background-color: #e87722; border: solid 1px #fff; border-radius: 100px; width: 30px; height: 30px;'></span>Headquarters</div></li>
-  <li><div>&nbsp;<span style='background-color: #ee9959; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px;'></span>&nbsp; Office location</div></li>
-<li><div>&nbsp;<span style='background-color: #175c7d; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px;'></span>&nbsp; In-country presence</div></li>
+  <li><div><span style='background-color: #e87722; border: solid 1px #fff; border-radius: 100px; width: 30px; height: 30px; margin-right: 11px;'></span><p class="legend-labels" style: "margin-top: 6px;">Headquarters</p></div></li>
+  <li><div><span style='background-color: #ee9959; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px; margin-left: 5px;'></span><p class="legend-labels">Office location</p></div></li>
+<li><div><span style='background-color: #175c7d; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px; margin-left: 5px;'></span><p class="legend-labels">In-country presence</p></div></li>
 </ul>
 <strong>Click on a location to see more.</strong>
 <br /><br />
@@ -69,8 +69,8 @@ const map = new mapboxgl.Map({
 
 document.getElementById('reset').addEventListener('click', function() {
       map.flyTo({
-        center: [-40.72278, 26.64993],
-        zoom: 2.8,
+        center: [4.65777, 50.83949],
+        zoom: 2,
         bearing: 0,
         pitch: 0,
         speed: 0.2,
