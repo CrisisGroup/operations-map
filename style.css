@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: black;
+    background: 000;
 }
 
 #map {
@@ -13,7 +13,7 @@ body {
 }
 
 #menu {
-    background: #fff;
+    background: #000;
     position: relative;
     z-index: 9999;
     width: 250px;
@@ -81,7 +81,7 @@ a {
 
 button#reset {
     background: #e87722;
-    color: #FFF;
+    color: #000;
     box-shadow: none;
     border: solid .7px #fff;
     padding: 10px;
@@ -98,7 +98,7 @@ button#reset {
         z-index: 99999999;
         position: absolute;
         text-align: center;
-        color: #FFF;
+        color: #000;
         width: auto;
         font-weight: bold;
         font-family: "franklin-gothic-urw", sans-serif;
@@ -180,7 +180,7 @@ p.infobox-dateline {
 
 #tagline {
     vertical-align: middle;
-    color: #FFF;
+    color: #000;
     font-family: "franklin-gothic-urw", sans-serif;
     width: 270px;
     margin-top: 36px;
@@ -194,7 +194,7 @@ p.infobox-dateline {
     border-radius: 4px;
     padding: 16px;
     font-family: "franklin-gothic-urw", sans-serif;
-    color: #FFF;
+    color: #000;
     font-weight: 500;
 }
 
