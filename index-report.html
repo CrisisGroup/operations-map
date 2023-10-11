@@ -39,7 +39,7 @@ $(document).ready(function(){
 <h1>Global Operations</h1>
 <p id="tagline"><strong style="color: #000;">LEGEND</strong></p>
 <ul id="legend">
-  <li><div><span style='background-color: #e87722; border: solid 1px #fff; border-radius: 100px; width: 30px; height: 30px; margin-right: 11px;'></span><p class="legend-labels" style: "margin-top: 6px;">Headquarters</p></div></li>
+  <li><div><span style='background-color: #a4343a; border: solid 1px #fff; border-radius: 100px; width: 30px; height: 30px; margin-right: 11px;'></span><p class="legend-labels" style: "margin-top: 6px;">Headquarters</p></div></li>
   <li><div><span style='background-color: #ee9959; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px; margin-left: 5px;'></span><p class="legend-labels">Office location</p></div></li>
 <li><div><span style='background-color: #175c7d; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px; margin-left: 5px;'></span><p class="legend-labels">In-country presence</p></div></li>
 </ul>
@@ -58,7 +58,7 @@ $(document).ready(function(){
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/daltonwb/clgxqyz8x00eg01qu8r4te2t6',
+    style: 'mapbox://styles/daltonwb/clnlswl79003801p7eofrfotf',
     center: [-48.08807, 26.22295],
     zoom: 2.4,
     bearing: 14.4,
@@ -111,7 +111,9 @@ map.on('load', () => {
 });
 
 map.on('click', (event) => {
-    const features = map.queryRenderedFeatures(event.point, {});
+    const features = map.queryRenderedFeatures(event.point, {
+      layers: ['crises']
+    });
     if (!features.length) {
         return;
     }
@@ -132,7 +134,7 @@ map.on('click', (event) => {
         })
         .setLngLat(feature.geometry.coordinates)
         .setHTML(
-            `<h4 class="infobox-name">${feature.properties.name}</h4><p class="infobox-dateline">${feature.properties.type}</p>`)
+            `<h4 class="infobox-name">${feature.properties.name}</h4><p class="infobox-dateline">${feature.properties.reports}</p>`)
         .addTo(map);
 
 });
@@ -183,7 +185,7 @@ const pulsingDot = {
 
     // Call once before every frame where the icon will be used.
     render: function() {
-        const duration = 1000;
+        const duration = 1500;
         const t = (performance.now() % duration) / duration;
 
         const radius = (size / 2) * 0.3;
@@ -212,8 +214,8 @@ const pulsingDot = {
             0,
             Math.PI * 2
         );
-        context.fillStyle = '#e87824';
-        context.strokeStyle = 'rgba(243, 181, 133, 1)';
+        context.fillStyle = 'rgb(210, 147, 147)';
+        context.strokeStyle = 'rgb(210, 147, 147)';
         context.lineWidth = 2 + 4 * (1 - t);
         context.fill();
         context.stroke();
@@ -241,21 +243,8 @@ map.on('load', () => {
     });
 
     map.addSource('dot-point', {
-      type: 'geojson',
-      data: {
-        "type": "FeatureCollection",
-        "features": [{
-        "type": "Feature",
-        "properties": {
-          "name": "Brussels",
-          "type": "Headquarters"
-        },
-        "geometry": {
-        "type": "Point",
-        "coordinates": [4.3628306, 50.8254368]
-        }
-        }]
-      }
+        type: 'vector',
+        url: 'mapbox://daltonwb.462wyeik'
     });
 
 		map.addLayer({
@@ -265,7 +254,8 @@ map.on('load', () => {
 			'layout': {
 					'icon-image': 'pulsing-dot',
 					'icon-allow-overlap': true
-			}
+			},
+			'source-layer': 'crisis_reports-0821mi'
 	});
 
 });
