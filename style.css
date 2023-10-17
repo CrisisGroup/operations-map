@@ -179,13 +179,15 @@ p.infobox-reports {
     font-family: "franklin-gothic-urw", sans-serif;
     font-size: 18px;
     text-transform: capitalize;
-    white-space: pre-line;
 }
 
-p.infobox-reports::before {
-    content: "\00B7"; /* Bullet character (•) */
-    margin-right: 5px;
-  }
+.mapboxgl-popup-content ul li {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    font-family: 'franklin-gothic-urw', sans-serif;
+    font-weight: 500;
+}
 
 #floatleft {
     float: left;
