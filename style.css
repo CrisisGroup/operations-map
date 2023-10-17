@@ -174,6 +174,19 @@ p.infobox-dateline {
     text-transform: capitalize;
 }
 
+p.infobox-reports {
+    margin: 0;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    white-space: pre-line;
+}
+
+p.infobox-reports::before {
+    content: "\00B7"; /* Bullet character (•) */
+    margin-right: 5px;
+  }
+
 #floatleft {
     float: left;
 }
