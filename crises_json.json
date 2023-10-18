@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Latin America & Caribbean Program",
+        "reports": "<ul>\n  <li>Central America’s Violent Northern Triangle</li>\n  <li>Colombia’s Dilemmas of Sustainable Peace</li>\n  <li>Mexico’s Criminal Violence</li>\n  <li>Venezuela’s Crippling Crisis and Corruption</li>\n</ul>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.5131866,
+          23.82063587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Latin America & Caribbean Program",
+        "reports": "<ul>\n  <li>Central America’s Violent Northern Triangle</li>\n  <li>Colombia’s Dilemmas of Sustainable Peace</li>\n  <li>Mexico’s Criminal Violence</li>\n  <li>Venezuela’s Crippling Crisis and Corruption</li>\n</ul>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.09079672,
+          9.012225969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Africa Program",
+        "reports": "<ul>\n  <li>Cameroon’s Anglophone Crisis</li>\n  <li>Central African Republic’s Fragile State</li>\n  <li>DR Congo’s Chronic Instability</li>\n  <li>Ethiopia’s Fractures</li>\n  <li>Lake Chad Basin’s Boko Haram Insurgency</li>\n  <li>Mozambique’s Deadly Insurrection</li>\n  <li>Nigeria’s Deadly Conflicts</li>\n  <li>Nile Waters Rivalry</li>\n  <li>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8103317,
+          11.98402742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europe & Central Asia Program",
+        "reports": "<ul>\n  <li>Eastern Mediterranean and Aegean Sea Rivalries</li>\n  <li>The Evolving European Security Environment</li>\n  <li>ISIS Returnees in the Region</li>\n <li>The Nagorno-Karabakh Conflict</li>\n <li>Tensions and Talks in the Western Balkans</li>\n  <li>Turkey’s PKK Insurgency</li>\n  <li>War in Ukraine and its Regional Implications</li>\n </ul>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.29408321,
+          50.01725603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Middle East & North Africa Program",
+        "reports": "<ul>\n  <li>Eastern Mediterranean and Aegean Sea Rivalries</li>\n  <li>The Evolving European Security Environment</li>\n  <li>ISIS Returnees in the Region</li>\n <li>The Nagorno-Karabakh Conflict</li>\n <li>Tensions and Talks in the Western Balkans</li>\n  <li>Turkey’s PKK Insurgency</li>\n <li>War in Ukraine and its Regional Implications</li>\n </ul>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.79091927,
+          33.68918177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Asia Program",
+        "reports": "<ul> <li>Afghanistan’s Contested Future</li>\n <li>Asia’s Disputed Sea Boundaries</li>\n <li>China’s Regional and Global Role</li>\n <li>India’s Domestic Conflicts</li>\n <li>The Kashmir Conflict</li>\n <li>Korean Peninsula Crisis</li>\n <li>Myanmar’s Multiple Conflicts</li>\n <li>Pakistan’s Overlapping Crises</li>\n <li>The Philippines’ Mindanao Peace Process</li>\n <li>Thailand’s Southern Insurgency</li>\n </ul>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.2868494,
+          21.42580648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "U.S. Program",
+        "reports": "<ul>\n <li>The U.S. as a Direct Military Actor</li>\n <li>The U.S. as a Diplomatic Actor in Conflict Settings</li>\n <li>The U.S. as a Security Partner and/or Weapons Supplier</li>\n </ul>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8060685,
+          39.38779452
+        ]
+      }
+    }
+  ]
+}

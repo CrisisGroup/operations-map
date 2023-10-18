@@ -58,7 +58,7 @@ $(document).ready(function(){
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/daltonwb/clnw04rih002p01oz7sefgy65',
+    style: 'mapbox://styles/daltonwb/clnw1mxyu003801qs31ptc64u',
     center: [-48.08807, 26.22295],
     zoom: 2.4,
     bearing: 14.4,
@@ -244,7 +244,7 @@ map.on('load', () => {
 
     map.addSource('dot-point', {
         type: 'vector',
-        url: 'mapbox://daltonwb.07wtyexo'
+        url: 'mapbox://daltonwb.6vanrh2e'
     });
 
 		map.addLayer({
@@ -255,7 +255,7 @@ map.on('load', () => {
 					'icon-image': 'pulsing-dot',
 					'icon-allow-overlap': true
 			},
-			'source-layer': 'map-bxghys'
+			'source-layer': 'regional_crises-3ihwcr'
 	});
 
 });
