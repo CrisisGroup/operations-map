@@ -36,15 +36,14 @@ $(document).ready(function(){
 <div id="mobilemenubtn"> MENU </div>
 <div class="box">
 
-<h1>Global Operations</h1>
 <p id="tagline"><strong style="color: #000;">LEGEND</strong></p>
 <ul id="legend">
   <li><div><span style='background-color: #a4343a; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px; margin-right: 11px;'></span><p class="legend-labels" style: "margin-top: 6px;">Headquarters</p></div></li>
   <li><div><span style='background-color: #ee9959; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px;'></span><p class="legend-labels">Office location</p></div></li>
 <li><div><span style='background-color: #175c7d; border: solid 1px #fff; border-radius: 100px; width: 20px; height: 20px; '></span><p class="legend-labels">In-country presence</p></div></li>
-<li><div><span style='background-color: #ca2337; border: solid 1px #fff; border-radius: 100px; width: 25px; height: 25px; margin-right: 11px;'></span><p class="legend-labels" style: "margin-top: 6px;">Research Programs</p></div></li>
+<li><div><span style='background-color: #ca2337; border: solid 1px #fff; border-radius: 100px; width: 25px; height: 25px; margin-right: 11px;'></span><p class="legend-labels" style: "margin-top: 6px;">Regional Program Priorities</p></div></li>
 </ul>
-<strong>Click on a location to see more.</strong>
+<strong>Click on regional program priorities to see more.</strong>
 <br /><br />
 <button id="reset">Click to reset view</button>
 <nav id="menu"></nav>
@@ -59,7 +58,7 @@ $(document).ready(function(){
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/daltonwb/clnulxmxq00hh01p707m8fbmi',
+    style: 'mapbox://styles/daltonwb/clnw04rih002p01oz7sefgy65',
     center: [-48.08807, 26.22295],
     zoom: 2.4,
     bearing: 14.4,
@@ -245,7 +244,7 @@ map.on('load', () => {
 
     map.addSource('dot-point', {
         type: 'vector',
-        url: 'mapbox://daltonwb.1bhkkefc'
+        url: 'mapbox://daltonwb.07wtyexo'
     });
 
 		map.addLayer({
@@ -256,7 +255,7 @@ map.on('load', () => {
 					'icon-image': 'pulsing-dot',
 					'icon-allow-overlap': true
 			},
-			'source-layer': 'crises_reports_htmlformatted2-1q8f0r'
+			'source-layer': 'map-bxghys'
 	});
 
 });
